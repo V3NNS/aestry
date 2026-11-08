@@ -14,8 +14,7 @@
 <footer class="foot"><a href="https://guns.lol/v3nns" target="_blank" rel="noopener noreferrer">V3NNS</a></footer></main>
 <script>
 const categories=[{id:"AU",title:"Among Us"},{id:"MC",title:"Minecraft"},{id:"GD",title:"Geometry Dash"}];
-const viewTargets=[document.querySelector(".hero"),document.querySelector("#rankings"),document.querySelector("#tests"),document.querySelector("#enlaces")];
-function updatePageView(){const key=location.hash.slice(1);const current=key==="rankings"?"rankings":key==="tests"?"tests":key==="enlaces"?"enlaces":"home";viewTargets.forEach(function(view){view.classList.toggle("view-hidden",view.dataset.view!==current)});document.querySelectorAll(".navlinks a").forEach(function(link){if(link.hash==="#"+current||current==="tests"&&link.hash==="#tests")link.setAttribute("aria-current","page");else link.removeAttribute("aria-current")});window.scrollTo(0,0)}
+function updatePageView(){const testingOnly=location.hash==="#tests";document.querySelector("#tests").classList.toggle("view-hidden",!testingOnly);document.querySelectorAll(".navlinks a").forEach(function(link){if(link.hash===location.hash&&location.hash)link.setAttribute("aria-current","page");else link.removeAttribute("aria-current")});if(testingOnly)window.scrollTo(0,0)}
 window.addEventListener("hashchange",updatePageView);
 updatePageView();
 const ranks=["Sehers I","Sehers II","Sehers III","Parismas I","Parismas II","Parismas III","Artemas I","Artemas II","Artemas III","Vantclaud I","Vantclaud II","Vantclaud III"];
