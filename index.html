@@ -14,7 +14,7 @@
 <footer class="foot"><a href="https://guns.lol/v3nns" target="_blank" rel="noopener noreferrer">V3NNS</a></footer></main>
 <script>
 const categories=[{id:"AU",title:"Among Us"},{id:"MC",title:"Minecraft"},{id:"GD",title:"Geometry Dash"}];
-function updatePageView(){const testingOnly=location.hash==="#tests";document.querySelector("#tests").classList.toggle("view-hidden",!testingOnly);document.querySelectorAll(".navlinks a").forEach(function(link){if(link.hash===location.hash&&location.hash)link.setAttribute("aria-current","page");else link.removeAttribute("aria-current")});if(testingOnly)window.scrollTo(0,0)}
+function updatePageView(){const testingOnly=location.hash==="#tests";document.querySelector("#tests").classList.toggle("view-hidden",!testingOnly);document.querySelectorAll("[data-view=home],[data-view=rankings],[data-view=enlaces]").forEach(function(view){view.classList.toggle("view-hidden",testingOnly)});document.querySelectorAll(".navlinks a").forEach(function(link){if(link.hash===location.hash&&location.hash)link.setAttribute("aria-current","page");else link.removeAttribute("aria-current")});if(testingOnly)window.scrollTo(0,0)}
 window.addEventListener("hashchange",updatePageView);
 updatePageView();
 const ranks=["Sehers I","Sehers II","Sehers III","Parismas I","Parismas II","Parismas III","Artemas I","Artemas II","Artemas III","Vantclaud I","Vantclaud II","Vantclaud III"];
