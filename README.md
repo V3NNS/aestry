@@ -4,7 +4,7 @@ By V3NNS - Among Us
 
 ## Rangos de jugadores
 
-- **Vantclaud** — Los mejores
+- **Vantclaud** — Avanzado
 - **Artemas** — Experimentados
 - **Parismas** — Intermedios
 - **Sehers** — Principiantes
