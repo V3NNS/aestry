@@ -1,6 +1,6 @@
 # Aestry
 
-Comunidad creada por V3NNS para Geometry Dash, Among Us y Minecraft.
+By V3NNS - Among Us
 
 ## Rangos de jugadores
 
