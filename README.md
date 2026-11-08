@@ -23,3 +23,4 @@ Cada rango tiene tres niveles: I, II y III.
 6. No se permite recibir ayuda ni información de espectadores.
 7. No abandones la prueba para evitar el resultado. Si alguien se desconecta, el tester decide si se repite la ronda.
 8. Mantengan el respeto durante toda la prueba.
+9. Durante toda la prueba, comparte tu pantalla en Discord para que el tester pueda ver la partida.
